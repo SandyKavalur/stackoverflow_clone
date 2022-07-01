@@ -1,6 +1,30 @@
 @import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
 
 .landing-container {
+  .card-service {
+    display: block;
+    margin: 16px auto;
+    padding: 32px 20px;
+    max-width: 300px;
+    text-align: center;
+    color: #898798;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(95, 92, 120, 0.12);
+    .header {
+      margin-bottom: 24px;
+    }
+  }
+  #landing1 {
+    padding-bottom: 10%;
+  }
+  #landing2 {
+    padding-bottom: 10%;
+  }
+  .content1 {
+    .content1svg {
+      width: 0.875em;
+    }
+  }
   .svg-container {
     position: absolute;
     top: 0;
@@ -31,23 +55,9 @@
   }
 
   main {
-    background: linear-gradient(to bottom, #ffffff 0%, #dddee1 100%);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding: 10vh 0 80vh;
     position: relative;
     text-align: center;
-    overflow: hidden;
-
-    &::after {
-      border-right: 2px dashed #eee;
-      content: "";
-      position: absolute;
-      top: calc(10vh + 1.618em);
-      bottom: 0;
-      left: 50%;
-      width: 2px;
-      height: 100%;
-    }
   }
 
   footer {
