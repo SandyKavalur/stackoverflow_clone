@@ -4,13 +4,67 @@ import styles from "../../styles/NavBar.module.scss";
 function NavBar() {
   return (
     <>
-      <div className={`${styles.bodyy} ${"container-fluid"}`}>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="container">
+          <a className="navbar-brand" href="#">
+            Navbar
+          </a>
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+              <li className="nav-item">
+                <a className="nav-link active" aria-current="page" href="#">
+                  Home
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link" href="#">
+                  Link
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                >
+                  Disabled
+                </a>
+              </li>
+            </ul>
+            <form className="d-flex">
+              <input
+                className="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button className="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      {/* <div className={`${styles.bodyy} ${"container-fluid"}`}>
         <nav
           className={`${styles.navv} ${"navbar navbar-dark navbar-expand-lg"}`}
         >
           <div className="container-fluid">
             <button
-              class={`${styles.navtoggle} ${"navbar-toggler"}`}
+              className={`${styles.navtoggle} ${"navbar-toggler"}`}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarMain"
@@ -18,9 +72,9 @@ function NavBar() {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarMain">
+            <div className="collapse navbar-collapse" id="navbarMain">
               <ul className="nav navbar-nav d-flex justify-content-center">
                 <li>
                   <a id="len1" className={styles.hoverable} href="#">
@@ -46,7 +100,7 @@ function NavBar() {
             </div>
           </div>
         </nav>
-      </div>
+      </div> */}
     </>
   );
 }
