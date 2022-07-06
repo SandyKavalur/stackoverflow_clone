@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 import Image from "next/image";
-import Footer from "../Footer/Footer";
 
 // importing animations
 import { motion } from "framer-motion";
@@ -86,7 +85,7 @@ function LandingPage() {
       opacity: 1,
       transition: {
         type: "spring",
-        duration: 5,
+        duration: 1,
         bounce: 0.3,
       },
     });
@@ -516,8 +515,6 @@ function LandingPage() {
           </div>
         </motion.div>
       </main>
-
-      <Footer />
     </div>
   );
 }

@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import LandingPage from "../components/LandingPage/LandingPage";
-import NavBar from "../components/NavBar/NavBar";
+import { LandingPage } from "../components";
 
 export default function Home() {
   return (
@@ -23,11 +22,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <NavBar />
         <LandingPage />
       </main>
 
-      <footer>
+      <section>
         <script
           src="https://unpkg.com/react/umd/react.production.min.js"
           crossorigin
@@ -42,7 +40,7 @@ export default function Home() {
           src="https://unpkg.com/react-bootstrap@next/dist/react-bootstrap.min.js"
           crossorigin
         ></script>
-      </footer>
+      </section>
     </>
   );
 }
