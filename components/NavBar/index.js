@@ -1,8 +1,16 @@
-import React from "react";
+import React, {useState} from "react";
+import Login from "../../pages/login";
 import styles from "../../styles/NavBar.module.scss";
 
+
 function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const togglePopup = () => {
+    setIsOpen(!isOpen);
+  }
   return (
+    
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container">
@@ -24,7 +32,7 @@ function NavBar() {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <a className="nav-link active"  onClick={togglePopup} aria-current="page" href="#">
                   Home
                 </a>
               </li>
@@ -57,7 +65,9 @@ function NavBar() {
             </form>
           </div>
         </div>
+        
       </nav>
+
       {/* <div className={`${styles.bodyy} ${"container-fluid"}`}>
         <nav
           className={`${styles.navv} ${"navbar navbar-dark navbar-expand-lg"}`}
@@ -101,6 +111,10 @@ function NavBar() {
           </div>
         </nav>
       </div> */}
+      {isOpen && <Login
+      
+      // handleClose={togglePopup}
+    />}
     </>
   );
 }
