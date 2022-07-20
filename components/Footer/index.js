@@ -23,7 +23,6 @@ function Footer() {
   const animation = useAnimation();
 
   useEffect(() => {
-    console.log(inView);
     if (inView) {
       animation.start({
         y: 0,

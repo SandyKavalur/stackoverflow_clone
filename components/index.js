@@ -1,5 +1,5 @@
 import LandingPage from "./LandingPage";
-import NavBar from "./NavBar";
+import NavBar from "./Dashboard";
 import Footer from "./Footer";
 import Layout from "./Layout";
 

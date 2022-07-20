@@ -1,0 +1,85 @@
+// Begin text editor styles
+.wrapper-class {
+  border: 1px solid #ccc;
+  resize: vertical;
+  overflow: auto;
+  height: 300px; // whatever height you want
+  width: 100%;
+  .editor-class {
+    padding: 1rem;
+    height: auto;
+    width: 100%;
+  }
+}
+.toolbar-class {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.preview {
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.customTextEditor {
+  padding: 20px;
+  .title {
+    margin-bottom: -5px;
+  }
+  .textEditorInput {
+    margin-bottom: -5px;
+  }
+}
+// End text editor styles
+
+// Begin tags input styles
+.tagsWrapper {
+  .tagsInput {
+    margin-bottom: -5px;
+  }
+
+  .tagsContainer {
+    display: flex;
+    // overflow: scroll;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: black;
+    input {
+      width: 100%;
+      min-width: 50%;
+      border: none;
+      border-radius: 5px;
+      padding: 14px;
+      padding-left: 14px;
+    }
+    input:focus {
+      outline: none;
+    }
+
+    .tag {
+      display: flex;
+      align-items: center;
+      margin: 7px 0;
+      margin-right: 10px;
+      padding: 0 10px;
+      padding-right: 5px;
+      border: 1px solid orange;
+      border-radius: 5px;
+      background-color: orange;
+      white-space: nowrap;
+      color: white;
+
+      button {
+        display: flex;
+        padding: 6px;
+        border: none;
+        background-color: unset;
+        cursor: pointer;
+        color: white;
+      }
+    }
+  }
+}
+// End tags input styles
